@@ -1,12 +1,12 @@
-number = int(input("Enter a number: "))
+num = int(input("Enter a number: "))
 
-if number < 2:
+if num < 2:
     print("Not prime")
 else:
     is_prime = True
 
-    for divisor in range(2, int(number**0.5) + 1):
-        if number % divisor == 0:
+    for divisor in range(2, int(num**0.5) + 1):
+        if num % divisor == 0:
             is_prime = False
             break
 
